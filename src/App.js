@@ -1,15 +1,15 @@
+import Routers from "./Allrouters/Routers";
 import "./App.css";
 
+import Allcomp from "./components/Allcomp";
 import Appbar from "./components/Appbar";
-import Filters from "./components/Filters";
-import Items from "./components/Items";
 
 function App() {
   return (
     <div>
       <Appbar />
-      <Filters />
-      <Items />
+
+      <Allcomp />
     </div>
   );
 }

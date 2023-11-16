@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-
+import { NavLink } from "react-router-dom";
 const Appbar = () => {
   const [open, setOpen] = useState(false);
   const menuclick = () => {
-    console.log("menuclick");
     setOpen(!open);
   };
 
@@ -44,9 +43,11 @@ const Appbar = () => {
           >
             <ul className="md:flex md:space-x-8 space-y-5 md:space-y-0">
               <li className="menu border-b-4 border-b-green-500 font-Poppins">
-                Fruites
+                <NavLink> Fruites</NavLink>
               </li>
-              <li className="menu font-Poppins">Vegetable</li>
+              <li className="menu font-Poppins">
+                <NavLink>Vegetable</NavLink>
+              </li>
               <li className="menu font-Poppins">More</li>
               <li className="py-2 px-4 text-green-500">
                 <svg
